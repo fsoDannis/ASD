@@ -4,7 +4,7 @@
 $(document).ready(function(){
 	$.ajax({
 		type: "GET",
-		url: "daySpec.xml",
+		url: "xhr/daySpec.xml",
 		dataType: "xml",
 		complete: function() {
             $('#page-wrap').listview('refresh');
@@ -20,12 +20,12 @@ $(document).ready(function(){
 	});
 	
 	$('#supList').empty();
-    $('#supList').CSVToTable('supInfo.csv');
+    $('#supList').CSVToTable('xhr/supInfo.csv');
 });
 
 
 //Getting data from a JSON file
-$.getJSON('taskList.json', function(data) {
+$.getJSON('xhr/taskList.json', function(data) {
   var items = [];
 
   $.each(data, function(key, val) {
