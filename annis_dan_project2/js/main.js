@@ -7,18 +7,19 @@ $(document).ready(function(){
 		url: "xhr/daySpec.xml",
 		dataType: "xml",
 		complete: function() {
-            $('#page-wrap').listview('refresh');
+            $('#specList').listview('refresh');
       	 },
 		success: function(xml) {
 			$(xml).find('item').each(function(){
 				var day = $(this).find('day').text();
 				var task = $(this).find('task').text();
-				$('<li data-role="list-divider" ></li>').html(day).appendTo('#page-wrap');
-				$('<li data-theme="d" ></li>').html(task).appendTo('#page-wrap');
+				$('<li data-role="list-divider" ></li>').html(day).appendTo('#specList');
+				$('<li data-theme="d" ></li>').html(task).appendTo('#specList');
 			});
 		}
 	});
 	
+//Load CSV Data
 	$('#supList').empty();
     $('#supList').CSVToTable('xhr/supInfo.csv');
 });
@@ -39,4 +40,3 @@ $.getJSON('xhr/taskList.json', function(data) {
 
 
 
-//Load CSV Data
