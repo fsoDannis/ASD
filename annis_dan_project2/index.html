@@ -1,0 +1,111 @@
+<!DOCTYPE html> 
+<html> 
+	<head>
+				<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/mobile/1.0b2/jquery.mobile-1.0b2.min.js"></script>
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.css" />
+		
+	</head> 
+ 
+	<body> 
+		
+		<div data-role="page" id="navPage">
+			<div data-role="header" data-theme="a" id="header">
+				<h1>Network Operations Task List</h1>
+			</div><!-- /header -->
+				
+			<div data-role="content">
+				<ul data-role="listview" data-theme="b" id="nav">
+					<li><a href='#mainList'>Daily Task List</a></li>
+					<li><a href='#dayList' data-transition="slideup">Day Specific List</a></li>
+					<li><a href='#supContact'>Supervisor Contact List</a></li>
+				</ul>
+			</div>
+		
+		
+			<div data-role="footer" data-theme="a">
+			<h4>Dan Annis ver 1.1</h4>
+			</div><!-- /footer -->
+			
+		</div><!-- /page -->
+		
+		
+		<div data-role="page" id="mainList" >
+			<div data-role="header" data-theme="a" id="header" >
+				<a href="#navPage" data-direction="reverse" data-icon="arrow-l" class="ui-btn-left ui-btn ui-btn-icon-left ui-btn-corner-all  ui-btn-up-a">
+					<span class="ui-btn-inner ui-btn-corner-all">
+					<span class="ui-btn-text">Back</span>
+					<span class="ui-icon ui-icon-arrow-l"></span>
+					</span>
+				</a>
+				<h1>Daily Task List</h1>
+			</div><!-- /header -->
+				
+			<div data-role="content">
+				<ul data-role="listview" data-theme="b" id="taskList">
+				</ul>
+			</div>
+		
+		
+			<div data-role="footer" data-theme="a">
+			<h4>Dan Annis ver 1.1</h4>
+			</div><!-- /footer -->
+			
+		</div><!-- /page -->
+		
+		<div data-role="page" id="dayList" >
+			<div data-role="header" data-theme="a" id="header" >
+				<a href="#navPage" data-transition="slidedown" data-icon="arrow-l" class="ui-btn-left ui-btn ui-btn-icon-left ui-btn-corner-all  ui-btn-up-a">
+					<span class="ui-btn-inner ui-btn-corner-all">
+					<span class="ui-btn-text">Back</span>
+					<span class="ui-icon ui-icon-arrow-l"></span>
+					</span>
+				</a>
+				<h1>Day Specific Tasks</h1>
+			</div><!-- /header -->
+				
+			<div data-role="content" id="page-wrap2" >
+				<ul data-role="listview" data-theme="b" id="page-wrap"></ul>
+			</div>
+		
+		
+		
+			<div data-role="footer" data-theme="a">
+			<h4>Dan Annis ver 1.1</h4>
+			</div><!-- /footer -->
+			
+		</div><!-- /page -->
+		
+		<div data-role="page" id="supContact" >
+			<div data-role="header" data-theme="a" id="header" >
+				<a href="#navPage" data-direction="reverse" data-icon="arrow-l" class="ui-btn-left ui-btn ui-btn-icon-left ui-btn-corner-all  ui-btn-up-a">
+					<span class="ui-btn-inner ui-btn-corner-all">
+					<span class="ui-btn-text">Back</span>
+					<span class="ui-icon ui-icon-arrow-l"></span>
+					</span>
+				</a>
+				<h1>Supervisor Contact Info</h1>
+			</div><!-- /header -->
+				
+			<div data-role="content" id="supListDiv" >
+				<ul data-role="listview" data-theme="b" id="supList"></ul>
+			</div>
+		
+		
+		
+			<div data-role="footer" data-theme="a">
+			<h4>Dan Annis ver 1.1</h4>
+			</div><!-- /footer -->
+			
+		</div><!-- /page -->
+		
+		<script type="text/javascript" src="main.js"></script> 
+		<script type="text/javascript" src="taskList.json"></script>
+ 		<script type="text/javascript" src="daySpec.xml"></script>
+ 	
+ 	</body> 
+
+	
+</html>

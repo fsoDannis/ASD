@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <Items>
+   
+   <item id="0">
+     <day>Sunday</day>
+     <list>
+       <task>This would be a task</task>
+     </list>
+   </item>
+   
+   <item id="2">
+     <day>Monday</day>
+     <list>
+       <task>This would be a task</task>
+     </list>
+   </item>  
+   
+   <item id="3">
+     <day>Tuesday</day>
+     <list>
+       <task>This would be a task</task>
+     </list>
+   </item>  
+    
+   <item id="4">
+     <day>Wednesday</day>
+     <list>
+       <task>This would be a task</task>
+     </list>
+   </item>  
+    
+   <item id="5">
+     <day>Thursday</day>
+     <list>
+       <task>This would be a task</task>
+     </list>
+   </item>  
+    
+   <item id="6">
+     <day>Friday</day>
+     <list>
+       <task>This would be a task</task>
+     </list>
+   </item>      
+   
+   <item id="7">
+     <day>Saturday</day>
+     <list>
+       <task>This would be a task</task>
+     </list>
+   </item>  
+ 
+ </items>
