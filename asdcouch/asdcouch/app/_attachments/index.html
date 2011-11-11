@@ -1,29 +1,24 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>My New CouchApp</title>
-    <link rel="stylesheet" href="style/main.css" type="text/css">
-  </head>
-  <body>
-    <div id="account"></div>
-
-    <h1>Generated CouchApp</h1>
-
-    <div id="profile"></div>
-    <div id="items"></div>
-
-    <div id="sidebar">
-      <p>Edit welcome message.</p>
-      <p>Ideas: You could easily turn this into a photo sharing app, or a grocery list, or a chat room.</p>
-    </div>
-  </body>
-  <script src="vendor/couchapp/loader.js"></script>
-  <script type="text/javascript" charset="utf-8">
-    $.couch.app(function(app) {
-      $("#account").evently("account", app);
-      $("#profile").evently("profile", app);
-      $.evently.connect("#account","#profile", ["loggedIn","loggedOut"]);
-      $("#items").evently("items", app);
-    });
-  </script>
+<!DOCTYPE html> 
+<!-- Dan Annis Project 3 ASD 11/11 -->
+<html> 
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Network Operations Task List</title>
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.css" />
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/mobile/1.0b2/jquery.mobile-1.0b2.min.js"></script>
+	</head>  
+	<body> 
+		<div data-role="page"id="home">
+			<div data-role="header" data-position="fixed">
+				<h1>Network Operations Task List</h1>
+			</div>
+			<div data-role="content" class="ui-body-a">
+			<ul id='supervisors' data-role="listview">
+			</ul>
+			</div>
+		</div>
+		<script src="js/main.js"></script>
+ 	</body> 
 </html>
